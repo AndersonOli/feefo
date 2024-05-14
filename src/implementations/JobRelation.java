@@ -1,13 +1,20 @@
-﻿package implementations;
+package implementations;
 
-public class Document {
-    int id;
-    String content;
-    double score;
+/**
+ * JobRelation is a model that handles the relation between the normalized job titles
+ * and the terms related.
+ */
 
-    public Document(int id, String content) {
+public class JobRelation {
+    public int id;
+    public String title;
+    public String wordsRelated;
+    public double score;
+
+    public JobRelation(int id, String title, String wordsRelated) {
         this.id = id;
-        this.content = content;
+        this.title = title;
+        this.wordsRelated = wordsRelated;
         this.score = 0.0;
     }
 }
